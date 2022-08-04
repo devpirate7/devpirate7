@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css" />
+    <script type="module" src="#"></script>
+    <title> Hurix Labs </title>
+</head>
+
+<body>
+    <section class = "section">
+        <div class = "topmenu">
+          <nav>
+            <a href = "#"  aria-current="page" > Concepts </a>
+            <a href = "#" > Explore Yourself </a>
+            <a href = "#" > Test Yourself </a>
+            <a href = "#" > Learn About Motion </a>
+          </nav>
+        </div>
+        <br>
+
+        <div class="leftmenu">
+          <h1>MOTION</h1>
+              <p>
+                An object is in <b onmouseenter = "getmotiondetails()" onmouseleave = "geto()" class="needle"  class="car-anime"> MOTION </b> its distance from another object is
+                changing i.e if it changes position relative to a reference point. A
+                <b onmouseenter = "getreferdetails()" onmouseleave = "geto()" > REFERENCE POINT </b> is a place or object used for comparison to
+                determine if something in motion.
+              </p>
+
+          <h1>SPEED</h1>
+                <p>
+                  The distance traveled by an object per unit if time is called its
+                  <b onmouseenter = "getspeeddetails()" onmouseleave = "geto()" >SPEED</b>. An object can travel with different speeds such as:
+                  <pre> <b onmouseenter = "get30kmdetails()" onmouseleave = "geto()" > 30km/h </b>    <b onmouseenter = "get90kmdetails()" onmouseleave = "geto()" > 90km/h </b>     <b onmouseenter = "get150kmdetails()" onmouseleave = "geto()"> 150km/h </b> </pre>
+                </p>
+            
+          <h1>ACCELERATION</h1>
+                <p>
+                  The rate of change of speed is called Accelration. Increment in the
+                  speed of an object is called <b onmouseenter = "getaccdetails()" onmouseleave = "geto()" > ACCELERATION </b>. Decrement in the
+                  speed of an object is called <b onmouseenter = "getdecdetails()" onmouseleave = "geto()" > DECELERATION </b>.
+                  <br />
+                  <br />
+                  The total distance traveled by an object divided by the total time
+                  taken to travel, gives the <b onmouseenter = "getaveragedetails()" onmouseleave = "geto()" > AVERAGE SPEED </b> of the object.
+                </p>
+        </div>
+          
+        <div class="rightmenu">
+          <div  id="animation" class="car-anime" >
+            <div class="road" >
+                <img src="https://raw.githubusercontent.com/bipu1105/Car-Animation-Main/main/road.png" alt="">
+            </div>
+    
+            <div class="trees">
+                <img src="https://i.pinimg.com/564x/f3/50/7e/f3507ef032aa8fcc7bf913ed11ea3060.jpg" alt="">
+                <img src="https://i.pinimg.com/564x/f3/50/7e/f3507ef032aa8fcc7bf913ed11ea3060.jpg" alt="">
+            </div>
+    
+            <div class="car">
+                <img src="https://raw.githubusercontent.com/bipu1105/Car-Animation-Main/main/car.png" alt="" class="car-body">
+                
+            </div>
+            <div class="wheels">
+                <img src="https://raw.githubusercontent.com/bipu1105/Car-Animation-Main/main/wheel.png" alt="" class="wheel-1">
+                <img src="https://raw.githubusercontent.com/bipu1105/Car-Animation-Main/main/wheel.png" alt="" class="wheel-2">
+            </div>
+          </div>  
+                <div class="hide">
+                   
+                    <p id="motioncontainer"  class="hidden">
+                        This is an example of motion. Notice that the distance of the car from trees is changing and the car is changing its position relative to the road.
+                    </p> 
+
+                    <p id="refercontainer"  class="hidden">
+                        In this example, the car is changing position relative to the road, so the car is in motion with reference to the road.
+                        <br>
+                        At the same time the car is not in motion relative to the driver because the distance between the driver and the car is constant.
+                    </p>
+
+                    <p id="speedcontainer"  class="hidden">
+                        In this example, the car is moving at a speed of <b style="color:red;" >60 km/h </b> (kilometres per hour). That means, if it continues to travel with this speed for one hour, it will travel 60 kilometres.
+                        <br>
+                        Speed = Distance/Time  
+                        &emsp;&emsp;&emsp;= km / h
+                        &emsp;&emsp;&emsp;= 60 / 1  
+                        &emsp;&emsp;&emsp;= 60 km/h"  
+                    </p>
+
+                    <p id="30kmcontainer"  class="hidden">
+                        In this example, the car is moving at a constant speed of 30 km/h (kilometres per hour).
+                    </p>
+
+                    <p id="90kmcontainer"  class="hidden">
+                        In this example, the car is moving at a constant speed of 90 km/h (kilometres per hour).
+                    </p>
+
+                    <p id="150kmcontainer"  class="hidden">
+                        In this example, the car is moving at a constant speed of 150 km/h (kilometres per hour).
+                    </p>
+
+                    <p id="acccontainer"  class="hidden">
+                        In this example, notice that the speed of the car is increasing gradually.
+                        <br>
+                        It is now running at a speed of ___.
+                    </p>
+
+                    <p id="deccontainer"  class="hidden">
+                        In this example, notice that the speed of the car is decreasing gradually.
+                        <br>
+                        It is now running at a speed of ___.
+                    </p>
+                   
+                    <p id="averagecontainer"  class="hidden">
+                        In this example, the car is moving at differnet speeds to travel certain distance.
+                        <br>
+                        It is now running at a speed of ___.
+                    </p>
+
+                    <p id="detailcontainer" >   </p>
+                    <p id="nothing">            </p>
+                </div>
+
+                
+                  <div class="meter">
+                    
+              </div>
+                <div class="speedometer">
+                  <div class="speedometer-inner">
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"></div>
+                    <div class="tick"><span></span></div>
+                    
+                    <div class="unit"></div>
+                    <div class="KmPH">
+                      <span class="_" id="h"></span><span class="_" id="t"></span
+                      ><span class="_0" id="o"></span>
+                    </div>
+                  </div>
+                </div>
+                
+        </div>
+    
+    </section>    
+
+    <script>
+        function getmotiondetails() {
+          let text = document.getElementById('motioncontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        
+        function getreferdetails() {
+          let text = document.getElementById('refercontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getspeeddetails() {
+          let text = document.getElementById('speedcontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function get30kmdetails() {
+          let text = document.getElementById('30kmcontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function get90kmdetails() {
+          let text = document.getElementById('90kmcontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function get150kmdetails() {
+          let text = document.getElementById('150kmcontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getaccdetails() {
+          let text = document.getElementById('acccontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getdecdetails() {
+          let text = document.getElementById('deccontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getaveragedetails() {
+          let text = document.getElementById('averagecontainer').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+  
+        
+      </script>
+
+    <footer>
+          
+      <div class="pagination">
+        <a href="Index.html" >&laquo; </a>
+        <a href="Index.html"  aria-current="page">1</a>
+        <a href="Index2.html">2</a>
+        <a href="Index2.html">&raquo; </a>
+      </div>
+    
+      <h4 class="footer-bottom">
+        &copy; Hurix Systems Private Limited. All rights reserved
+      </h4>
+    </footer>
+</body>
+</html>

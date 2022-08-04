@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index2.css" />
+    <script type="module" src="#"></script>
+    <title> Hurix Labs </title>
+</head>
+
+<body>
+    <section class = "section">
+        <div class = "topmenu">
+            <nav>
+            <a href = "#" aria-current="page"  > Concepts </a>
+            <a href = "#" > Explore Yourself </a>
+            <a href = "#" > Test Yourself </a>
+            <a href = "#" > Learn About Motion </a>
+            </nav>
+        </div>
+        <br>
+
+        <div class="leftmenu">
+          <h2>MOTION GRAPHS</h2>
+          <p>
+            Motion graphs provide an opportunity to analyze change in distance and
+            time. Motion of an object can be indicated using
+            <b onmouseenter="getdistance()" onmouseleave="geto()" class="distance-green"> DISTANCE </b> ,
+            <b onmouseenter="getspeed()" onmouseleave="geto()" class="distance-red"> SPEED </b> and
+            <b  onmouseenter="getacc()" onmouseleave="geto()" class="distance-blue"> ACCELERATION </b> graphs.
+            <br />
+            <br />
+            When the vehicle is moving at constant speed, explore the
+            <b  onmouseenter="getdistance1()" onmouseleave="geto()" class="distance-green"> DISTANCE </b> ,
+            <b  onmouseenter="getspeed1()" onmouseleave="geto()" class="distance-red"> SPEED </b> and
+            <b  onmouseenter="getacc1()" onmouseleave="geto()" class="distance-blue"> ACCELERATION </b>graphs.
+            <br />
+            <br />
+            When the vehicle is accelerating, explore the
+            <b  onmouseenter="getdistance2()" onmouseleave="geto()" class="distance-green"> DISTANCE </b> ,
+            <b  onmouseenter="getspeed2()" onmouseleave="geto()" class="distance-red"> SPEED </b> and
+            <b  onmouseenter="getacc2()" onmouseleave="geto()" class="distance-blue"> ACCELERATION </b>graphs.
+          </p>
+        </div>
+          
+        <div class="rightmenu">
+          <div class="animation">
+                    
+            </div>  
+              <div class="hide">
+                  
+                    <p id="distance"  class="hidden">
+                      Notice the green line in the graph. It indicates the distance traveled by the vehicle in a particular segment of time. Time is shown along the X axis in seconds and distance is shown along the Y asix in meters.
+                    </p>
+                    
+                    <p id="speed"  class="hidden">
+                      Notice the red line in the graph. It indicates the speed of the speed of the vehicle at a particular time. Time is shown along the X axis in seconds and speed isshown along Y axis in m/s.
+                    </p> 
+
+                    <p id="acc"  class="hidden">
+                      Notice the blue line in the graph. It indicates the acceleration of the vehicle at a particular time. Time is shown along the X axis in seconds and speed is accleration along the Y axis in m/s<sup>2</sup>.
+                    </p> 
+
+                    <p id="distance1"  class="hidden">
+                      The vehicle is moving at a constant speed (20m/s).Notice that the green line in the graph is a staight slanted line.
+                    </p>
+                    
+                    <p id="speed1"  class="hidden">
+                      THe vehicle is moving at a condatnt speed (20m/s). Notice that the red line in the graph is a straight horizontal line.
+                    </p> 
+
+                    <p id="acc1"  class="hidden">
+                      The vehicle is moving at a constant speed (20m/s). Notice that the blue line in the graph is a straight horizontal line with no rise, as the accelration is 0.
+                    </p> 
+
+                    <p id="distance2"  class="hidden">
+                    The speed of the vehicle is increasing gradually. Notice that the green line in the graph is a curved line.
+                    </p> 
+                    
+                    <p id="speed2"  class="hidden">
+                     The speed of the vehicle is increasing gradually. Notice that the green line in the graph is a curved line.
+                    </p> 
+                    
+                    <p id="acc2"  class="hidden">
+                        the speed of the vehicle is increasing gradullay. Notice that the blue line in the graph a straight horizontal line.
+                    </p> 
+                     
+                    <p id="detailcontainer" >   </p>
+                    <p id="nothing">            </p>
+           </div>     
+        </div>
+    
+    </section>    
+
+    <script>
+
+      function getdistance() {
+          let text = document.getElementById('distance').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getspeed() {
+          let text = document.getElementById('speed').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getacc() {
+          let text = document.getElementById('acc').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getdistance1() {
+          let text = document.getElementById('distance1').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getspeed1() {
+          let text = document.getElementById('speed1').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getacc1() {
+          let text = document.getElementById('acc1').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getdistance2() {
+          let text = document.getElementById('distance2').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing2').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getspeed2() {
+          let text = document.getElementById('speed2').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+
+        function getacc2() {
+          let text = document.getElementById('acc2').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+        function geto() {
+            let text = document.getElementById('nothing').innerText;
+          document.getElementById('detailcontainer').innerText = text;
+        }
+    </script>
+
+<footer>
+          
+  <div class="pagination">
+    <a href="Index.html" >&laquo; </a>
+    <a href="Index.html" >1</a>
+    <a href="Index2.html"  aria-current="page">2</a>
+    <a href="Index2.html" >&raquo; </a>
+  </div>
+
+  <h4 class="footer-bottom">
+    &copy; Hurix Systems Private Limited. All rights reserved
+  </h4>
+</footer>
+
+</body>
+</html>

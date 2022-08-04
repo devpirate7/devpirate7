@@ -1,0 +1,147 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*='col-'] {
+    width: 100%;
+  }
+}
+
+html{
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 10px;
+}
+
+.leftmenu {
+  width: 30%;
+  float: left;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid rgb(18, 240, 184);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.rightmenu {
+  width: 65%;
+  height: 700px;
+  float: right;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid rgb(18, 240, 184);
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.graphimage {
+  width: 700px;
+  height: 460px;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-image: url('https://img.freepik.com/free-vector/hexagonal-shape-3d-perspective-style-white-background-design_1017-27558.jpg?w=2000');
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0.5rem;
+  gap: 30px;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  background-color: #41b3a3;
+  border-radius: 20px;
+  flex-wrap: inherit;
+  transition: 1s ease;
+}
+
+nav :hover {
+  background-color: #e27d60;
+  color: #000;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color:#d4d4d4;
+}
+
+.animation {
+  width: auto;
+  height: 500px;
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+}
+
+.hidden {
+  display: none;
+}
+
+.distance-green:hover {
+  color: green;
+}
+.distance-red:hover {
+  color: red;
+}
+.distance-blue:hover {
+  color: blue;
+}
+
+footer{
+  margin-top: auto;
+  text-align:center;
+  position:relative;
+}
+
+.pagination {
+  display: inline-block;
+  align-content: center;
+}
+
+.pagination a {
+  color: black;
+  float: bottom;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s,ease;
+
+}
+
+.pagination a.active {
+  background-color: (207, 195, 195);
+  color: rgb(0, 0, 0);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #E27D60;
+  border-radius: 10px;
+}
+footer .footer-bottom{
+  background-color: #41B3A3;
+}
+
+footer a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+}
